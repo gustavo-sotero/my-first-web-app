@@ -70,7 +70,7 @@
           <p class="subtitle">Fiz esta seção para entender mais sobre como importar uma lib para vue.</p>
           <swiper
             :modules="modules"
-            :slides-per-view="1"
+            :slides-per-view="slides_per_views"
             :pagination="{ clickable: true }"
           >
           <swiper-slide>
@@ -121,6 +121,22 @@
               </blockquote>
             </div>
           </swiper-slide>
+          <swiper-slide>
+            <div class="carrousel">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+                <cite>
+                  <img src="https://picsum.photos/300/300?random=4" alt="Foto de Wanessa Souza" />
+                  Vitor Almeida
+                </cite>
+              </blockquote>
+            </div>
+          </swiper-slide>
           </swiper>
         </div>
       </div>
@@ -133,7 +149,7 @@
         <div class="section-content">
           <h2 class="title">Meus Contatos.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus eos quam repellat neque dolorem nihil! Quis quibusdam minus qui, quae libero laudantium atque laborum ea! Dolore, nihil. Ipsa, possimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officiis. Alias numquam laborum dolor eius quaerat enim asperiores facilis excepturi sint? Voluptatem, mollitia libero. Ipsum hic incidunt aliquam fuga id?
           </p>
         </div>
         <div class="links">
@@ -170,10 +186,12 @@ export default {
   name: 'App',
   created () {
     window.addEventListener('scroll', this.toggleShadowHeader);
+    window.addEventListener('resize', this.slidePerView);
   },
   data() {
     return {
       toggle_menu: false,
+      slides_per_views: 1,
       is_active: '',
       toggle_shadow_header: false
     }
@@ -188,14 +206,24 @@ export default {
     },
     toggleShadowHeader () {
       if (window.scrollY >= this.$refs.headershadow.clientHeight) {
-        return this.toggle_shadow_header = true;
+        this.toggle_shadow_header = true;
       } else {
-        return this.toggle_shadow_header = false;
+        this.toggle_shadow_header = false;
+      }
+    },
+    slidePerView () {
+      if (this.$refs.headershadow.clientWidth >= 1023) {
+        this.slides_per_views = 2;
+      } else {
+        this.slides_per_views = 1;
       }
     }
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.toggleShadowHeader);
+  },
+  mounted(){
+    this.slidePerView();
   },
   setup() {
     return {
