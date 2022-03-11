@@ -1,0 +1,348 @@
+/* --------------------------------
+
+Nucleo Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+$icon-font-path: "../fonts" !default;
+
+@font-face {
+  font-family: 'Nucleo';
+  src: url('#{$icon-font-path}/Nucleo.eot');
+  src: url('#{$icon-font-path}/Nucleo.eot') format('embedded-opentype'),
+    url('#{$icon-font-path}/Nucleo.woff2') format('woff2'),
+    url('#{$icon-font-path}/Nucleo.woff') format('woff'),
+    url('#{$icon-font-path}/Nucleo.ttf') format('truetype'),
+    url('#{$icon-font-path}/Nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Nucleo';
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+.icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+.icon-32 {
+  font-size: 32px;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.icon-rotate-90  {
+	transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+	transform: rotate(270deg);
+}
+
+.icon-flip-y {
+	transform: scaleY(-1);
+}
+.icon-flip-x {
+	transform: scaleX(-1);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-menu: unicode(ea03);
+$icon-close: unicode(ea04);
+$icon-profile-2: unicode(ea05);
+$icon-profile-1: unicode(ea06);
+$icon-verified_user-2: unicode(ea07);
+$icon-verified_user-1: unicode(ea08);
+$icon-transactions-9: unicode(ea0a);
+$icon-transactions-12: unicode(ea0b);
+$icon-transactions-7: unicode(ea0c);
+$icon-transactions-6: unicode(ea0d);
+$icon-transactions-5: unicode(ea0e);
+$icon-transactions-4: unicode(ea0f);
+$icon-transactions-3: unicode(ea10);
+$icon-transactions-2: unicode(ea11);
+$icon-transactions-8: unicode(ea12);
+$icon-transactions-11: unicode(ea13);
+$icon-transactions-10: unicode(ea14);
+$icon-transactions-1: unicode(ea15);
+$icon-content-360deg-8: unicode(ea16);
+$icon-content-360deg-7: unicode(ea17);
+$icon-content-360deg-10: unicode(ea18);
+$icon-content-360deg-5: unicode(ea19);
+$icon-content-360deg-4: unicode(ea1a);
+$icon-content-360deg-3: unicode(ea1b);
+$icon-content-360deg-2: unicode(ea1c);
+$icon-content-360deg-11: unicode(ea1d);
+$icon-content-360deg-9: unicode(ea1e);
+$icon-content-360deg-6: unicode(ea1f);
+$icon-content-360deg-1: unicode(ea20);
+$icon-youtube-brands: unicode(ea21);
+$icon-whatsapp-brands: unicode(ea22);
+$icon-twitter-brands: unicode(ea23);
+$icon-telegram-plane: unicode(ea24);
+$icon-linkedin-in-brands: unicode(ea25);
+$icon-linkedin-brands: unicode(ea26);
+$icon-instagram-brands: unicode(ea27);
+$icon-google-play-brands: unicode(ea28);
+$icon-google-pay-brands: unicode(ea29);
+$icon-google-drive-brands: unicode(ea2a);
+$icon-google-brands: unicode(ea2b);
+$icon-github-brands: unicode(ea2c);
+$icon-facebook-messenger-brands: unicode(ea2d);
+$icon-facebook-f-brands: unicode(ea2e);
+$icon-facebook-brands: unicode(ea2f);
+$icon-discord-brands: unicode(ea30);
+$icon-react-brands: unicode(ea31);
+$icon-vuejs-brands: unicode(ea32);
+$icon-logo-css3: unicode(ea33);
+$icon-logo-html5: unicode(ea34);
+
+.icon-menu::before {
+  content: $icon-menu;
+}
+
+.icon-close::before {
+  content: $icon-close;
+}
+
+.icon-profile-2::before {
+  content: $icon-profile-2;
+}
+
+.icon-profile-1::before {
+  content: $icon-profile-1;
+}
+
+.icon-verified_user-2::before {
+  content: $icon-verified_user-2;
+}
+
+.icon-verified_user-1::before {
+  content: $icon-verified_user-1;
+}
+
+.icon-transactions-9::before {
+  content: $icon-transactions-9;
+}
+
+.icon-transactions-12::before {
+  content: $icon-transactions-12;
+}
+
+.icon-transactions-7::before {
+  content: $icon-transactions-7;
+}
+
+.icon-transactions-6::before {
+  content: $icon-transactions-6;
+}
+
+.icon-transactions-5::before {
+  content: $icon-transactions-5;
+}
+
+.icon-transactions-4::before {
+  content: $icon-transactions-4;
+}
+
+.icon-transactions-3::before {
+  content: $icon-transactions-3;
+}
+
+.icon-transactions-2::before {
+  content: $icon-transactions-2;
+}
+
+.icon-transactions-8::before {
+  content: $icon-transactions-8;
+}
+
+.icon-transactions-11::before {
+  content: $icon-transactions-11;
+}
+
+.icon-transactions-10::before {
+  content: $icon-transactions-10;
+}
+
+.icon-transactions-1::before {
+  content: $icon-transactions-1;
+}
+
+.icon-content-360deg-8::before {
+  content: $icon-content-360deg-8;
+}
+
+.icon-content-360deg-7::before {
+  content: $icon-content-360deg-7;
+}
+
+.icon-content-360deg-10::before {
+  content: $icon-content-360deg-10;
+}
+
+.icon-content-360deg-5::before {
+  content: $icon-content-360deg-5;
+}
+
+.icon-content-360deg-4::before {
+  content: $icon-content-360deg-4;
+}
+
+.icon-content-360deg-3::before {
+  content: $icon-content-360deg-3;
+}
+
+.icon-content-360deg-2::before {
+  content: $icon-content-360deg-2;
+}
+
+.icon-content-360deg-11::before {
+  content: $icon-content-360deg-11;
+}
+
+.icon-content-360deg-9::before {
+  content: $icon-content-360deg-9;
+}
+
+.icon-content-360deg-6::before {
+  content: $icon-content-360deg-6;
+}
+
+.icon-content-360deg-1::before {
+  content: $icon-content-360deg-1;
+}
+
+.icon-youtube-brands::before {
+  content: $icon-youtube-brands;
+}
+
+.icon-whatsapp-brands::before {
+  content: $icon-whatsapp-brands;
+}
+
+.icon-twitter-brands::before {
+  content: $icon-twitter-brands;
+}
+
+.icon-telegram-plane::before {
+  content: $icon-telegram-plane;
+}
+
+.icon-linkedin-in-brands::before {
+  content: $icon-linkedin-in-brands;
+}
+
+.icon-linkedin-brands::before {
+  content: $icon-linkedin-brands;
+}
+
+.icon-instagram-brands::before {
+  content: $icon-instagram-brands;
+}
+
+.icon-google-play-brands::before {
+  content: $icon-google-play-brands;
+}
+
+.icon-google-pay-brands::before {
+  content: $icon-google-pay-brands;
+}
+
+.icon-google-drive-brands::before {
+  content: $icon-google-drive-brands;
+}
+
+.icon-google-brands::before {
+  content: $icon-google-brands;
+}
+
+.icon-github-brands::before {
+  content: $icon-github-brands;
+}
+
+.icon-facebook-messenger-brands::before {
+  content: $icon-facebook-messenger-brands;
+}
+
+.icon-facebook-f-brands::before {
+  content: $icon-facebook-f-brands;
+}
+
+.icon-facebook-brands::before {
+  content: $icon-facebook-brands;
+}
+
+.icon-discord-brands::before {
+  content: $icon-discord-brands;
+}
+
+.icon-react-brands::before {
+  content: $icon-react-brands;
+}
+
+.icon-vuejs-brands::before {
+  content: $icon-vuejs-brands;
+}
+
+.icon-logo-css3::before {
+  content: $icon-logo-css3;
+}
+
+.icon-logo-html5::before {
+  content: $icon-logo-html5;
+}
+
